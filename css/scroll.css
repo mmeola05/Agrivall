@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #dbdbdb;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(177, 177, 177);
+    transition: background 0.3s;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #45a049, #2e7d32);
+  }
