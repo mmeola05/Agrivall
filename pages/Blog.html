@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="icon" href="../assets/logo/AGRIVALL-simbolo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Agrivall</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="../assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" /></a>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./Productos.html">Productos</a></li>
+          <li><a href="./Casilla.html">La Casilla</a></li>
+          <li><a href="./Blog.html">Blog</a></li>
+          <li><a href="./About.html">Sobre Nosotros</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="../pages/Casilla.html" class="btn-reserva">Reservar La Casilla</a>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="language">
+          <select name="" id="">
+            <option><span>ES</span></option>
+            <option><span>VL</span></option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="blog">
+      <h2>Blog</h2>
+      <div class="blog-container">
+        <!-- Publicación 1 -->
+        <div class="blog-card">
+          <img src="../assets/img/publicacion/pc-1-publi.jpeg" alt="Publicación 1">
+          <div class="blog-info">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 10 Oct. 2023</span>
+              <span><i class="fas fa-user"></i> Usuario</span>
+            </div>
+            <h3>La “pedra seca” patrimonio de la humanidad</h3>
+            <p>El arte de construir muros en piedra seca, tradicional en zonas rurales de España y otros países de
+              Europa...</p>
+            <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Publicación 2 -->
+        <div class="blog-card">
+          <img src="../assets/img/publicacion/pc-2-publi.jpg" alt="Publicación 2">
+          <div class="blog-info">
+            <div class="blog-meta">
+              <span><i class="far fa-calendar-alt"></i> 29 Junio 2023</span>
+              <span><i class="fas fa-user"></i> Usuario</span>
+            </div>
+            <h3>CYDIA POMONELLA (CARPOCAPSA)</h3>
+            <p>La carpocapsa o arna de la pomera (Cydia pomonella) es una especie de lepidóptero...</p>
+            <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pagination">
+      <button class="prev"><i class="fas fa-chevron-left"></i> Anterior</button>
+      <span id="page-number">1</span>
+      <button class="next">Siguiente <i class="fas fa-chevron-right"></i></button>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo-section">
+        <img src="../assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" />
+        <p>Tradición ecológica desde el corazón de la Vall de Gallinera</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-envelope"></i> info@agrivall.com</p>
+        <p><i class="fas fa-phone"></i> +34 99 999 99</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Vall de Gallinera, Alicante
+        </p>
+      </div>
+
+      <div class="footer-section enlaces-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Aviso Legal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 AgriVall. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</html>

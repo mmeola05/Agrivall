@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import url("header.css");
+@import url("footer.css");
+@import url("scroll.css");
+
+/* Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #fafcbf;
+    color: #1E4428;
+}
+
+.blog {
+    text-align: left;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Titulo */
+.blog h2 {
+    font-size: 28px;
+    color: #1E4428;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards*/
+.blog-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.blog-meta i {
+    margin-right: 5px;
+}
+
+.blog-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Descripcion */
+.blog-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.leer-mas {
+    color: #ffffff;
+    background-color: #313131;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.leer-mas i {
+    margin-left: 5px;
+}
+
+.leer-mas:hover {
+    color: #4CAF50;
+    background-color: #272727;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pagination button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+    background: #3d8b40;
+}
+
+.pagination span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E4428;
+}
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        flex-direction: column;
+    }
+
+    .blog-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .blog-info {
+        width: 60%;
+    }
+}

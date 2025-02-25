@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/detalle-producto.css" />
+  <link rel="icon" href="../assets/logo/AGRIVALL-simbolo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Agrivall</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="../assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" /></a>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./Productos.html">Productos</a></li>
+          <li><a href="./Casilla.html">La Casilla</a></li>
+          <li><a href="./Blog.html">Blog</a></li>
+          <li><a href="./About.html">Sobre Nosotros</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="../pages/Casilla.html" class="btn-reserva">Reservar La Casilla</a>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="language">
+          <select name="" id="">
+            <option><span>ES</span></option>
+            <option><span>VL</span></option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="producto">
+      <div class="producto-container">
+        <!-- Galería de imágenes -->
+        <div class="producto-imagen">
+          <div><img id="imagen-principal" src="../assets/img/products/foto-cerezas.png"
+              alt="Imagen Principal del Producto"></div>
+          <div class="producto-miniaturas">
+            <div><img src="../assets/img/products/foto-cerezas.png" alt="Imagen 1" onclick="cambiarImagen(this)"></div>
+            <div><img src="../assets/img/products/foto-cerezas.png" alt="Imagen 2" onclick="cambiarImagen(this)"></div>
+            <div><img src="../assets/img/products/foto-cerezas.png" alt="Imagen 3" onclick="cambiarImagen(this)"></div>
+            <div><img src="../assets/img/products/foto-almendras.png" alt="Imagen 4" onclick="cambiarImagen(this)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Información del producto -->
+        <div class="producto-info">
+          <div class="producto-resena">
+            <i class="fas fa-star" onclick="stars(this)"></i>
+            <i class="fas fa-star" onclick="stars(this)"></i>
+            <i class="fas fa-star" onclick="stars(this)"></i>
+            <i class="fas fa-star" onclick="stars(this)"></i>
+            <i class="far fa-star" onclick="stars(this)"></i>
+            (128 reseñas)
+          </div>
+
+          <h2>Cereza</h2>
+
+          <!-- Selector de variante -->
+          <div class="producto-variante">
+            <p>Tipo de Cereza</p>
+            <select>
+              <option value="Early Lory">Early Lory</option>
+              <option value="Burlat">Burlat</option>
+              <option value="Brooks">Brooks</option>
+              <option value="Prime Geant">Prime Geant</option>
+              <option value="Garnet">Garnet</option>
+              <option value="New Star">New Star</option>
+              <option value="Van">Van</option>
+
+            </select>
+          </div>
+          <!-- Selecciión de peso -->
+          <div class="producto-peso">
+            <p class="click" onclick="toggleStyle(this)">2 kg - 31,80€</p>
+            <p class="click" onclick="toggleStyle(this)">5 kg - 79,50€</p>
+          </div>
+          <!-- Selección de cantidad -->
+          <div class="producto-opciones">
+            <div>
+              <label for="">Cantidad</label>
+              <input type="number" min="1" value="1">
+            </div>
+            <button class="btn-carrito">Añadir al Carrito</button>
+          </div>
+
+          <!-- Descripción del producto -->
+          <p class="producto-descripcion">
+            En cerezas destacamos por la precocidad, recolectamos en la última semana de abril,
+            y tenemos la mitad de la producción en secano y la otra mitad con riego deficitario,
+            consiguiendo así un excelente sabor. Nuestro periodo de recolección abarca de finales de abril
+            hasta mediados de junio.
+          </p>
+
+          <div class="producto-etiquetas">
+            <div>
+              <i class="fa-solid fa-leaf"></i>
+              <p>100% Ecológico</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-truck"></i>
+              <p>Envío en 24/48h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo-section">
+        <img src="../assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" />
+        <p>Tradición ecológica desde el corazón de la Vall de Gallinera</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-envelope"></i> info@agrivall.com</p>
+        <p><i class="fas fa-phone"></i> +34 99 999 99</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Vall de Gallinera, Alicante
+        </p>
+      </div>
+
+      <div class="footer-section enlaces-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Aviso Legal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 AgriVall. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+<script>
+  function cambiarImagen(imagen) {
+    document.getElementById("imagen-principal").src = imagen.src;
+  }
+  function toggleStyle(element) {
+    element.classList.toggle("active");
+  }
+  function stars(element) {
+    if (element.classList.contains("fas")) {
+      element.classList.remove("fas");
+      element.classList.add("far");
+    } else {
+      element.classList.remove("far");
+      element.classList.add("fas");
+    }
+  }
+
+  const menuToggle = document.getElementById('menuToggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+
+
+</script>
+
+</html>

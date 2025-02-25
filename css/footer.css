@@ -1,0 +1,109 @@
+/* Footer */
+footer {
+    background-color: #14532D;
+    color: white;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+/* Container del footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Secciones del footer */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+/* Logo */
+.logo-section {
+    display: none;
+}
+
+.logo-section img {
+    height: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Titulos */
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section p {
+    margin-bottom: 10px;
+}
+.footer-section ul li {
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #CCCCCC;
+}
+
+.enlaces-section {
+    display: none;
+}
+
+/* Iconos*/
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #CCCCCC;
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px 20px;
+        text-align: left;
+    }
+
+    .logo-section {
+        display: initial;
+    }
+
+    .enlaces-section {
+        display: initial;
+    }
+}

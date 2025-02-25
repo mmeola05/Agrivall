@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import url("header.css");
+@import url("footer.css");
+@import url("scroll.css");
+
+/* Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #1E4428;
+    color: white;
+}
+
+.contacto {
+    text-align: center;
+}
+
+.contact-title {
+    background-color: #fafcbf;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacto h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #1e4428;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Tarjetas */
+.info-card {
+    color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.info-card #icono{
+    display: flex;
+    align-items: flex-end;
+}
+.info-card i {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.info-card #info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-card h3 {
+    font-size: 18px;
+    margin: 0;
+}
+.info-card p {
+    margin: 0;
+}
+
+/* Form/Mapa */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+.contact-form {
+    background: white;
+    color: #1E4428;
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #3d8b40;
+}
+
+/* Mapa */
+.contact-map {
+    width: 90%;
+    max-width: 600px;
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* iframe */
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
+/* RESPONSIVE*/
+@media screen and (min-width: 768px) {
+    .contact-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 47px;
+        width: 100%;
+    }
+    .info-card {
+        background: #ffffff;
+        color: #1E4428;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 25px;
+        display: block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .info-card #icono{
+        display: initial;
+    }
+    .info-card i {
+        font-size: 34px;
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+    .info-card #info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-card h3 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .info-card p {
+        margin: 0;
+    }
+    .contact-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        max-width: 1200px;
+    }
+
+    .contact-form, .contact-map {
+        width: 100%;
+        max-width: 500px;
+    }
+}

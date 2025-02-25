@@ -1,0 +1,258 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("scroll.css");
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #1E4428;
+}
+
+/* portada */
+.portada {
+    position: relative;
+    background: url("../assets/img/casilla/fachada.jpg") no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.portada-info {
+    background: white;
+    width: 85%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portada-info h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.portada-info div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    gap: 50px;
+    padding: 30px 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery-item {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    aspect-ratio: 16/9;
+    transition: 0.3s all ease-in;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery-item:hover {
+    transform: scale(1.06);
+}
+.gallery-item.large {
+    grid-column: span 2;
+}
+
+/* desc y precios */
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.description {
+    width: 100%;
+    text-align: left;
+}
+
+.description h2, .pricing h3 {
+    font-size: 20px;
+}
+
+.description p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.description ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.pricing {
+    width: 80%;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pricing p {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* resrevar */
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.calendar, .booking-form {
+    width: 100%;
+}
+
+.calendar h3, .booking-form h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.calendar-grid {
+    gap: 5px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.calendar-grid iframe{
+    height: 30vh;
+}
+
+/* form */
+.booking-form input {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-reserva-casilla {
+    width: 100%;
+    padding: 12px;
+    background: #c02828;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-reserva-casilla:hover {
+    background: #a02020;
+}
+
+/* responisve */
+@media screen and (min-width: 1024px) {
+    .portada {
+        height: 450px;
+        padding: 20px;
+    }
+
+    .portada-info {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .portada-info h1 {
+        font-size: 24px;
+    }
+
+    .portada-info div {
+        font-size: 16px;
+        gap: 30px;
+    }
+    .gallery{
+        flex-direction: row;
+    }
+    .gallery-item{
+        width: 25%;
+    }
+    .details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .pricing {
+        width: 35%;
+        padding: 20px;
+        margin-right: 15px;
+    }
+
+    .pricing p {
+        font-size: 18px;
+    }
+    .reservation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .calendar, .booking-form {
+        width: 45%;
+    }
+
+    .booking-form input {
+        padding: 12px;
+        width: 96%;
+    }
+    .calendar-grid iframe{
+        height: 30vh;
+        width: 100%;
+    }
+    .btn-reserva-casilla {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
