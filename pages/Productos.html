@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Agrivall">
+    <meta name="keywords" content="Agrivall, cerezas ecológicas, productos ecológicos, agricultura sostenible, LaCasilla">
+    <meta property="og:title" content="Agrivall - Productos Ecológicos y LaCasilla">
+    <meta property="og:description" content="Disfruta de productos ecológicos">
+    <meta name="theme-color" content="#1E4428">
     <link rel="stylesheet" href="../css/productos.css" />
     <link
       rel="icon"
@@ -51,10 +56,10 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
           <div class="language">
-            <select name="" id="">
-              <option><span>ES</span></option>
-              <option><span>VL</span></option>
-            </select>
+            <select name="language" id="languageSelect">
+              <option value="es">ES</option>
+              <option value="vl">VL</option>
+            </select>            
           </div>
         </div>
       </div>
@@ -216,13 +221,13 @@
         <p>© 2025 AgriVall. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const nav = document.querySelector("nav");
+    
+      menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>    
   </body>
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const nav = document.querySelector("nav");
-
-    menuToggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
-  </script>
 </html>

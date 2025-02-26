@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Agrivall">
+    <meta name="keywords" content="Agrivall, cerezas ecológicas, productos ecológicos, agricultura sostenible, LaCasilla">
+    <meta property="og:title" content="Agrivall - Productos Ecológicos y LaCasilla">
+    <meta property="og:description" content="Disfruta de productos ecológicos">
+    <meta name="theme-color" content="#1E4428">
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="icon" href="../assets/logo/AGRIVALL-simbolo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -38,9 +43,9 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="language">
-                    <select name="" id="">
-                        <option><span>ES</span></option>
-                        <option><span>VL</span></option>
+                    <select name="language" id="languageSelect">
+                        <option value="es">ES</option>
+                        <option value="vl">VL</option>
                     </select>
                 </div>
             </div>
@@ -59,16 +64,15 @@
             <div class="historia-texto">
                 <h2>Nuestra Historia</h2>
                 <p>
-                    Agrivall és una empresa agrària familiar que es dedica al cultiu ecològic.<br>
-                    Es va formar l’any 1994 per Javier Savall, docent i agricultor apassionat<br>
-                    del territori. El principal cultiu és la cirera, peró també cultivem albercocs,<br>
-                    nous i cítrics.
+                    Agrivall es una empresa agrícola familiar que se dedica al cultivo ecológico.<br>
+                    Se formó en el año 1994 por Javier Savall, docente y agricultor apasionado del territorio.<br>
+                    El principal cultivo es la cereza, pero también cultivamos albaricoques, nueces y cítricos.
                 </p>
                 <p>
-                    Estem certificats en el CAECV (ES-ECO-020-CV) des de 2006 amb el número<br>
-                    d’operador CV 1568 PV.En l’aspecte social prioritzem la contractació de mà<br>
-                    d’obra local per ajudar a la fixació de la població en el medi rural i ajudar a<br>
-                    prevenir la despoblació de l’àrea.
+                    Estamos certificados en el CAECV (ES-ECO-020-CV) desde 2006 con el número<br>
+                    de operador CV 1568 PV. En el aspecto social priorizamos la contratación de mano<br>
+                    de obra local para ayudar a la fijación de la población en el medio rural y ayudar a<br>
+                    prevenir la despoblación del área.
                 </p>
             </div>
             <div class="historia-img">
@@ -104,19 +108,13 @@
         <!-- Parcelas -->
         <section class="parcelas">
             <div class="parcelas-img">
-                <img src="../assets/img/parcela.jpg" alt="oarcela Imagen" />
+                <img src="../assets/img/parcela.jpg" alt="parcela Imagen" />
             </div>
             <div class="parcelas-texto">
                 <h2>Parcelas</h2>
                 <p>
-                    Afavorim la biodiversitat al camp mantenint la coberta vegetal natural, els marges de pedra seca i
-                    aplicant tècniques sostenibles com el reg deficitari i el control biològic de plagues. Des de 1994
-                    hem recuperat terres tradicionals, començant amb 2 hectàrees de secà a la Umbría, on vam plantar
-                    cirerers de varietats heretades dels avis com Burlat, Van, Garnet i Brooks.<br>
-                    <br>Més endavant, el 2004, vam adquirir una parcel·la de regadiu anomenada Fons Machi, destinada a
-                    cirerers de varietats modernes com Early Lory i Prime Géant. També vam reconvertir una altra finca,
-                    el Plà de Joan Roc, per cultivar albercoquers de la varietat Vermell Passió, noguers i més cirerers,
-                    destacant l’equilibri entre tradició i innovació en els nostres cultius.
+                    Fomentamos la biodiversidad en el campo manteniendo la cubierta vegetal natural, los márgenes de piedra seca y aplicando técnicas sostenibles como el riego deficitario y el control biológico de plagas. Desde 1994 hemos recuperado tierras tradicionales, comenzando con 2 hectáreas de secano en la Umbría, donde plantamos cerezos de variedades heredadas de los abuelos como Burlat, Van, Garnet y Brooks.<br>
+                    <br>Más adelante, en 2004, adquirimos una parcela de regadío llamada Fons Machi, destinada a cerezos de variedades modernas como Early Lory y Prime Géant. También reconvertimos otra finca, el Plà de Joan Roc, para cultivar albaricoques de la variedad Vermell Passió, nogueras y más cerezos, destacando el equilibrio entre tradición e innovación en nuestros cultivos.
                 </p>
             </div>
         </section>
@@ -160,14 +158,14 @@
             <p>© 2025 AgriVall. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('nav');
+    
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
-<script>
-    const menuToggle = document.getElementById('menuToggle');
-    const nav = document.querySelector('nav');
-
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
 
 </html>

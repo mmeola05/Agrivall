@@ -1,11 +1,13 @@
-/* generales */
-body {
+:root {
+    --color-primario: #14532D;
+    --color-secundario: #BF1A1A;
+    --color-blanco: white;
     font-family: "Poppins", Arial, sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #14532D;
+    background-color: var(--color-primario);
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -33,17 +35,17 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #14532D;
+    background-color: var(--color-primario);
     padding: 15px 0;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
 }
 
 nav.active {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--color-blanco);
     display: flex;
     padding: 20px;
-    background-color: #14532d;
+    background-color: var(--color-primario);
     transform: translateY(0);
 }
 
@@ -60,7 +62,7 @@ nav ul li {
 nav ul li a {
     position: relative;
     text-decoration: none;
-    color: white;
+    color: var(--color-blanco);
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 5px;
@@ -73,7 +75,7 @@ nav ul li a::after {
     bottom: 0;
     width: 0;
     height: 1px;
-    background-color: white;
+    background-color: var(--color-blanco);
     transition: width 0.3s ease-in-out;
 }
 
@@ -85,13 +87,13 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Botón de menú hamburguesa */
+/* Boton hamburguesa */
 .menu-toggle {
     background: none;
     border: none;
     font-size: 24px;
     margin-right: 30px;
-    color: white;
+    color: var(--color-blanco);
     cursor: pointer;
 }
 
@@ -105,8 +107,8 @@ nav ul li a:hover::after {
 }
 
 .btn-reserva {
-    background-color: #BF1A1A;
-    color: white;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
@@ -118,19 +120,20 @@ nav ul li a:hover::after {
 }
 
 .social-icons a {
-    color: white;
+    color: var(--color-blanco);
     font-size: 18px;
     text-decoration: none;
     margin: 0 10px;
 }
 
-.language select{
+.language select {
     background: transparent;
     border: none;
     font-size: 14px;
-    color: white;
+    color: var(--color-blanco);
 }
-.language option{
+
+.language option {
     border: none;
     font-size: 14px;
     color: black;
@@ -139,16 +142,19 @@ nav ul li a:hover::after {
 
 /* RESPONSIVE */
 @media screen and (min-width: 768px) {
-    header{
+    header {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .logo img{
+
+    .logo img {
         margin-left: 80px;
     }
+
     .menu-toggle {
         display: none;
     }
+
     nav {
         display: flex;
         position: static;
@@ -157,10 +163,12 @@ nav ul li a:hover::after {
         justify-content: space-between;
         width: auto;
     }
+
     nav ul {
         display: flex;
         gap: 20px;
     }
+
     .actions {
         display: flex;
         flex-direction: row;

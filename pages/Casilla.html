@@ -2,13 +2,18 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/casilla.css" />
-    <link rel="icon" href="../assets/logo/AGRIVALL-simbolo.svg" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Agrivall">
+    <meta name="keywords" content="Agrivall, cerezas ecológicas, productos ecológicos, agricultura sostenible, LaCasilla">
+    <meta property="og:title" content="Agrivall - Productos Ecológicos y LaCasilla">
+    <meta property="og:description" content="Disfruta de productos ecológicos">
+    <meta name="theme-color" content="#1E4428">
+    <link rel="stylesheet" href="../css/casilla.css">
+    <link rel="icon" href="../assets/logo/AGRIVALL-simbolo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Agrivall</title>
 </head>
 
@@ -16,7 +21,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="../index.html"><img src="../assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" /></a>
+                <a href="../index.html"><img src="../assets/logo/AGRIVALL-logo-simbolo-blanco%20(1).svg" alt="Agrivall Logo"></a>
             </div>
             <button class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
@@ -38,9 +43,9 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="language">
-                    <select name="" id="">
-                        <option><span>ES</span></option>
-                        <option><span>VL</span></option>
+                    <select name="language" id="languageSelect">
+                        <option value="es">ES</option>
+                        <option value="vl">VL</option>
                     </select>
                 </div>
             </div>
@@ -48,23 +53,23 @@
     </header>
     <main>
         <section class="portada">
-                <div class="portada-info">
-                    <h1>La Casilla</h1>
-                    <div>
-                        <p><i class="fas fa-user-friends"></i> 6 huéspedes &nbsp;</p>
-                        <p><i class="fas fa-bed"></i> 3 habitaciones &nbsp; </p>
-                        <p><i class="fas fa-bath"></i> 2 baños</p>
-                    </div>
+            <div class="portada-info">
+                <h1>La Casilla</h1>
+                <div>
+                    <p><i class="fas fa-user-friends"></i> 6 huéspedes &nbsp;</p>
+                    <p><i class="fas fa-bed"></i> 3 habitaciones &nbsp; </p>
+                    <p><i class="fas fa-bath"></i> 2 baños</p>
                 </div>
+            </div>
         </section>
-        <!-- Galería de Imágenes -->
-        <section class="gallery">
-            <div class="gallery-item large"><img src="../assets/img/casilla/dormi.jpg" alt="Dormitorio"></div>
-            <div class="gallery-item"><img src="../assets/img/casilla/salon.jpg" alt="Salón"></div>
-            <div class="gallery-item"><img src="../assets/img/casilla/cocina.jpg" alt="Cocina"></div>
+        <section class="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria-img">
+                <div class="galeria-item large"><img src="../assets/img/casilla/dormi.jpg" alt="Dormitorio"></div>
+                <div class="galeria-item"><img src="../assets/img/casilla/salon.jpg" alt="Salón"></div>
+                <div class="galeria-item"><img src="../assets/img/casilla/cocina.jpg" alt="Cocina"></div>
+            </div>
         </section>
-
-        <!-- Descripción y Precios -->
         <section class="details">
             <div class="description">
                 <h2>Descripción</h2>
@@ -81,20 +86,20 @@
                 </ul>
             </div>
 
-            <div class="pricing">
+            <div class="precio">
                 <h3>Precios</h3>
                 <p>1 - Noche <span>180€/noche</span></p>
                 <p>2 - Noches <span>250€/noche</span></p>
                 <p>3 - Noches <span>320€/noche</span></p>
             </div>
         </section>
-
-        <!-- Calendario y Formulario de Reserva -->
-        <section class="reservation">
+        <section class="reservacion">
             <div class="calendar">
                 <h3>Calendario de Disponibilidad</h3>
                 <div class="calendar-grid">
-                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FMadrid&showPrint=0&showCalendars=0&showTitle=0&src=YjJjY2MzODhkYmVhMDU2OTVkNDU2NDE2OTM1OWQ1MGQxYmViN2VhYjM2MDJmMmE0ZTVkZDgwM2NiZjM1Yjc2ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5" style="border-width:0" frameborder="0" scrolling="no"></iframe>                </div>
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FMadrid&showPr…cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5"
+                        style="border-width: 0;" loading="lazy"></iframe>
+                </div>
             </div>
 
             <div class="booking-form">
@@ -103,8 +108,8 @@
                 <input type="email" placeholder="Email">
                 <input type="tel" placeholder="Teléfono">
                 <div class="date-inputs">
-                    <input type="date" placeholder="Llegada">
-                    <input type="date" placeholder="Salida">
+                    <input type="date" id="fecha-llegada" name="llegada" required>
+                    <input type="date" id="fecha-salida" name="salida" required>
                 </div>
                 <button class="btn-reserva-casilla">Reservar Ahora</button>
             </div>
@@ -113,7 +118,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section logo-section">
-                <img src="../assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" />
+                <img src="../assets/logo/AGRIVALL-logo-simbolo-blanco%20(1).svg" alt="Agrivall Logo">
                 <p>Tradición ecológica desde el corazón de la Vall de Gallinera</p>
             </div>
 
@@ -121,9 +126,7 @@
                 <h3>Contacto</h3>
                 <p><i class="fas fa-envelope"></i> info@agrivall.com</p>
                 <p><i class="fas fa-phone"></i> +34 99 999 99</p>
-                <p>
-                    <i class="fas fa-map-marker-alt"></i> Vall de Gallinera, Alicante
-                </p>
+                <p><i class="fas fa-map-marker-alt"></i> Vall de Gallinera, Alicante</p>
             </div>
 
             <div class="footer-section enlaces-section">
@@ -149,13 +152,14 @@
             <p>© 2025 AgriVall. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('nav');
+      
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+    </script>
 </body>
-<script>
-    const menuToggle = document.getElementById('menuToggle');
-    const nav = document.querySelector('nav');
-  
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
+
 </html>

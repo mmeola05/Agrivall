@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Agrivall">
+  <meta name="keywords" content="Agrivall, cerezas ecológicas, productos ecológicos, agricultura sostenible, LaCasilla">
+  <meta property="og:title" content="Agrivall - Productos Ecológicos y LaCasilla">
+  <meta property="og:description" content="Disfruta de productos ecológicos">
+  <meta name="theme-color" content="#1E4428">
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="icon" href="./assets/logo/AGRIVALL-simbolo.svg" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -38,23 +43,23 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="language">
-          <select name="" id="">
-            <option><span>ES</span></option>
-            <option><span>VL</span></option>
-          </select>
+          <select name="language" id="languageSelect">
+            <option value="es">ES</option>
+            <option value="vl">VL</option>
+          </select>          
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-title">
+    <section class="portada">
+      <div class="portada-content">
+        <div class="portada-title">
           <h1>
             Tradición ecológica desde el corazón de la Vall de Gallinera
           </h1>
         </div>
-        <div class="hero-buttons">
+        <div class="portada-buttons">
           <a href="./pages/DetalleProducto.html" class="btn btn-green">Comprar Cerezas</a>
           <a href="./pages/Casilla.html" class="btn btn-red">Reservar La Casilla</a>
           <a href="./pages/Blog.html" class="btn btn-outline">Ver Blog</a>
@@ -145,7 +150,7 @@
       <h2>Últimas Publicaciones</h2>
       <div class="publicaciones-container">
         <!-- Tarjeta 1 -->
-        <div class="publicacion-card">
+        <article  class="publicacion-card">
           <img src="./assets/img//publicacion/foto-1-publi.png" alt="Publicación 1" />
           <div class="publicacion-info">
             <span class="fecha">12 Marzo 2025</span>
@@ -153,10 +158,10 @@
             <p>DESCRIPCIÓN DEL POST</p>
             <a href="./pages/Blog.html" class="leer-mas">Leer más</a>
           </div>
-        </div>
+        </article >
 
         <!-- Tarjeta 2 -->
-        <div class="publicacion-card">
+        <article  class="publicacion-card">
           <img src="./assets/img/publicacion/foto-2-publi.png" alt="Publicación 2" />
           <div class="publicacion-info">
             <span class="fecha">5 Marzo 2025</span>
@@ -164,10 +169,10 @@
             <p>DESCRIPCIÓN DEL POST</p>
             <a href="./pages/Blog.html" class="leer-mas">Leer más</a>
           </div>
-        </div>
+        </article >
 
         <!-- Tarjeta 3 -->
-        <div class="publicacion-card">
+        <article  class="publicacion-card">
           <img src="./assets/img/publicacion/foto-3-publi.png" alt="Publicación 3" />
           <div class="publicacion-info">
             <span class="fecha">28 Febrero 2025</span>
@@ -175,17 +180,16 @@
             <p>DESCRIPCIÓN DEL POST</p>
             <a href="./pages/Blog.html" class="leer-mas">Leer más</a>
           </div>
-        </div>
+        </article >
       </div>
 
-      <!-- Botón de ver más publicaciones -->
       <a href="./pages/Blog.html" class="btn-ver-publicaciones">Ver Todas las Publicaciones</a>
     </section>
   </main>
   <footer>
     <div class="footer-container">
       <div class="footer-section logo-section">
-        <img src="./assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" />
+        <a href="../index.html"><img src="./assets/logo/AGRIVALL-logo-simbolo-blanco (1).svg" alt="Agrivall Logo" /></a>
         <p>Tradición ecológica desde el corazón de la Vall de Gallinera</p>
       </div>
 
@@ -221,14 +225,14 @@
       <p>© 2025 AgriVall. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.querySelector('nav');
+  
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>  
 </body>
-<script>
-  const menuToggle = document.getElementById('menuToggle');
-  const nav = document.querySelector('nav');
-
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
 
 </html>
